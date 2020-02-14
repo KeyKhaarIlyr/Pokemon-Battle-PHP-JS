@@ -1,0 +1,261 @@
+@charset "UTF-8";
+html, body {
+  padding: 0;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: 110%;
+}
+
+body {
+  background-image: url(../IMG/background/pokemon_trophy.jpg);
+}
+
+@font-face {
+  font-family: "pokemonBold";
+  src: url("fonts/pokemon/Pokemon Solid.ttf");
+}
+
+@font-face {
+  font-family: "pokemonRetro";
+  src: url("fonts/pokemon/retroPokemon.ttf");
+}
+
+header {
+  margin-top: 3%;
+}
+
+header #title {
+  text-align: center;
+  margin-bottom: 2%;
+  font-family: pokemonBold;
+  font-size: 9rem;
+  color: #ffe602;
+  background-color: rgba(26, 75, 238, 0.7);
+  padding-top: 2%;
+  border-radius: 20px;
+  -webkit-transition: background-color 0.2s ease-out, display 0.4s ease-in-out;
+  transition: background-color 0.2s ease-out, display 0.4s ease-in-out;
+}
+
+header #title:hover {
+  background-color: rgba(26, 75, 238, 0.9);
+}
+
+header #messages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5%;
+}
+
+header #messages p {
+  padding: 1% 0;
+  text-align: center;
+  font-family: pokemonRetro;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  color: black;
+  border-radius: 15px;
+  background-color: white;
+  border: 3px solid black;
+}
+
+header #messages #indication {
+  display: none;
+}
+
+header #messages #welcome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#main {
+  display: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main section .pokeBox {
+  display: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 1% 2%;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 35px;
+  -webkit-transition: background-color 0.2s ease-out, display 0.4s ease-in-out;
+  transition: background-color 0.2s ease-out, display 0.4s ease-in-out;
+}
+
+#main section .pokeBox:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#main section .pokeBox #atak1, #main section .pokeBox #atak2, #main section .pokeBox #atak3, #main section .pokeBox #atak4 {
+  border-radius: 20px;
+  -webkit-transition: background-color 0.1s ease-out;
+  transition: background-color 0.1s ease-out;
+}
+
+#main section .pokeBox #atak1:hover, #main section .pokeBox #atak2:hover, #main section .pokeBox #atak3:hover, #main section .pokeBox #atak4:hover {
+  background-color: rgba(75, 128, 82, 0.4);
+  color: white;
+}
+
+#main section .pokeBox div, #main section .pokeBox p {
+  padding: 0;
+  margin: 1% 0;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main section .pokeBox img {
+  width: auto;
+  height: 5rem;
+}
+
+#main section .pokeBox div:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#main section .pokeBox div:last-child {
+  display: none;
+}
+
+#main section .pokeBox .typeEau {
+  border-radius: 10px;
+  background-color: rgba(143, 211, 228, 0.7);
+  padding: 1%;
+}
+
+#main section .pokeBox .typePlante {
+  border-radius: 10px;
+  background-color: rgba(143, 228, 168, 0.7);
+  padding: 1%;
+}
+
+#main section .pokeBox .typeFeu {
+  border-radius: 10px;
+  background-color: rgba(228, 188, 143, 0.7);
+  padding: 1%;
+}
+
+#main section .pokeBox .typeÉlectrik {
+  border-radius: 10px;
+  background-color: rgba(222, 241, 114, 0.7);
+  padding: 1%;
+}
+
+#main section .pokeBox .typePsy {
+  border-radius: 10px;
+  background-color: rgba(228, 143, 200, 0.7);
+  padding: 1%;
+}
+
+#main section .pokeBox .typeSpectre {
+  border-radius: 10px;
+  background-color: rgba(211, 143, 228, 0.7);
+  padding: 1%;
+}
+
+#main section .pokeBox .hp {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.788);
+  color: #23d46d;
+  padding: 0;
+  height: 2rem;
+  margin: 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#fightArea {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2%;
+}
+
+#fightArea #fightPanel {
+  border-radius: 15px;
+  background-color: white;
+  border: 3px solid black;
+}
+
+#fightArea #fightPanel p {
+  text-align: center;
+  font-family: pokemonRetro;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  color: black;
+  overflow: auto;
+  overflow-wrap: break-word;
+  word-break: break-all;
+  max-height: 8rem;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-top: 3%;
+}
+
+nav button {
+  margin: 0 3%;
+  padding: 0.5% 2%;
+  border: none;
+  border-radius: 20px;
+  color: #fbff02;
+  background-color: rgba(26, 75, 238, 0.8);
+  font-family: pokemonRetro;
+  -webkit-transition: background-color 0.2s ease-out, display 0.4s ease-in-out;
+  transition: background-color 0.2s ease-out, display 0.4s ease-in-out;
+}
+
+nav button:hover {
+  background-color: #1a4bee;
+}
+/*# sourceMappingURL=style.css.map */

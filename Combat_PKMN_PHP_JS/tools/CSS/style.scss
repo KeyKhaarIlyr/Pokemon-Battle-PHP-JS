@@ -1,0 +1,222 @@
+html, body
+{
+	padding: 0;
+	margin: 0;
+	background-repeat: no-repeat;
+	background-size: 110%;
+}
+body
+{
+	background-image: url(../IMG/background/pokemon_trophy.jpg);
+}
+
+@font-face
+{
+	font-family: "pokemonBold";
+	src: url("fonts/pokemon/Pokemon Solid.ttf")
+}
+@font-face
+{
+	font-family: "pokemonRetro";
+	src: url("fonts/pokemon/retroPokemon.ttf")
+}
+
+header
+{
+	margin-top: 3%;
+	#title
+	{
+		text-align: center;
+		margin-bottom: 2%;
+		font-family: pokemonBold;
+		font-size: 9rem;
+		color: rgba(255, 230, 2, 1);
+		background-color: rgba(26, 75, 238, 0.7);
+		padding-top: 2%;
+		border-radius: 20px;
+		transition: background-color 0.2s ease-out, display 0.4s ease-in-out;
+		&:hover
+		{
+			background-color: rgba(26, 75, 238, 0.9);
+		}
+	}
+	#messages
+	{
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		margin-top: 5%;
+		p
+		{
+			padding: 1% 0;
+			text-align: center;
+			font-family: pokemonRetro;
+			letter-spacing: 2px;
+			word-spacing: 5px;
+			color: rgb(0, 0, 0);
+			border-radius: 15px;
+			background-color: white;
+			border: 3px solid black;
+		}
+		#indication
+		{
+			display: none;
+		}
+		#welcome
+		{
+			display: flex;
+		}
+	}
+}
+#main
+{
+	display: none;
+	justify-content: space-around;
+	align-items: center;
+	section
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.pokeBox
+		{
+			display: none;
+			justify-content: space-around;
+			margin: 1% 2%;
+			background-color: rgba(255, 255, 255, 0.4);
+			border-radius: 35px;
+			transition: background-color 0.2s ease-out, display 0.4s ease-in-out;
+			&:hover
+			{
+				background-color: rgba(255, 255, 255, 0.8) ;
+			}
+			#atak1, #atak2, #atak3, #atak4
+			{
+				border-radius: 20px;
+				transition: background-color 0.1s ease-out;
+			}
+			#atak1:hover, #atak2:hover, #atak3:hover, #atak4:hover
+			{
+				background-color: rgba(75, 128, 82, 0.4);
+				color: white;
+			}
+			div, p
+			{
+				padding: 0;
+				margin: 1% 0;
+				text-align: center;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+				img
+				{
+					width: auto;
+					height: 5rem;
+				}
+			div:first-child
+			{
+				display: flex;
+				justify-content: flex-start;
+			}
+			div:last-child
+			{
+				display: none;
+			}
+			.typeEau
+			{
+				border-radius: 10px;
+				background-color: rgba(143, 211, 228, 0.7);
+				padding: 1%;
+			}
+			.typePlante
+			{
+				border-radius: 10px;
+				background-color: rgba(143, 228, 168, 0.7);
+				padding: 1%;
+			}
+			.typeFeu
+			{
+				border-radius: 10px;
+				background-color: rgba(228, 188, 143, 0.7);
+				padding: 1%;
+			}
+			.typeÉlectrik
+			{
+				border-radius: 10px;
+				background-color: rgba(222, 241, 114, 0.7);
+				padding: 1%;
+			}
+			.typePsy
+			{
+				border-radius: 10px;
+				background-color: rgba(228, 143, 200, 0.7);
+				padding: 1%;
+			}
+			.typeSpectre
+			{
+				border-radius: 10px;
+				background-color: rgba(211, 143, 228, 0.7);
+				padding: 1%;
+			}
+			.hp
+			{
+				border-radius: 10px;
+				background-color: rgba(255, 255, 255, 0.788);
+				color: rgb(35, 212, 109);
+				padding: 0;
+				height: 2rem;
+				margin: 0;
+				align-self: center;
+			}
+		}
+	}
+}
+
+#fightArea
+{
+	display: none;
+	justify-content: center;
+	margin-top: 2%;
+	#fightPanel
+	{
+		border-radius: 15px;
+		background-color: white;
+		border: 3px solid black;
+		p
+		{
+			text-align: center;
+			font-family: pokemonRetro;
+			letter-spacing: 2px;
+			word-spacing: 5px;
+			color: rgb(0, 0, 0);
+			overflow: auto;
+			overflow-wrap: break-word;
+			word-break: break-all;
+			max-height: 8rem;
+		}
+	}
+}
+
+nav
+{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	margin-top: 3%;
+	button
+	{
+		margin: 0 3%;
+		padding: 0.5% 2%;
+		border: none;
+		border-radius: 20px;
+		color: rgb(251, 255, 2);
+		background-color: rgba(26, 75, 238, 0.8);
+		font-family: pokemonRetro;
+		transition: background-color 0.2s ease-out, display 0.4s ease-in-out;
+		&:hover
+		{
+			background-color: rgba(26, 75, 238, 1);
+		}
+	}
+}
